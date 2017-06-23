@@ -14,10 +14,11 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-#define USE_SERIAL
+//#define USE_SERIAL
+#define USE_I2C
 
-//#define MASTER_LEFT
-#define MASTER_RIGHT
+#define MASTER_LEFT
+//#define MASTER_RIGHT
 //#define EE_HANDS
 
 
@@ -41,6 +42,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_HUE_STEP 10
 #define RGBLIGHT_SAT_STEP 17
 #define RGBLIGHT_VAL_STEP 17
+
+// prevent stuck modifieres, mine get stuck all the time
+#define PREVENT_STUCK_MODIFIERS
 
 // wiring of each half
 #undef MATRIX_ROW_PINS
